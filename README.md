@@ -1,22 +1,23 @@
-# go-hello-world
+# go-hello-world-plus
 
-Build `go-hello-world-M.m.P-I.x86_64.rpm`
-and   `go-hello-world_M.m.P-I_amd64.deb`
+Build `go-hello-world-plus-M.m.P-I.x86_64.rpm`
+and   `go-hello-world-plus_M.m.P-I_amd64.deb`
 where "M.m.P-I" is Major.minor.Patch-Iteration.
 
 ## Usage
 
-A simple "hello world" program.
-The purpose of the repository it to show how to:
+An extension of 
+[go-hello-world](https://github.com/docktermj/go-hello-world)
+that adds the following features:
 
-1. Build go executable locally
-1. Build go executable via Docker
-1. Build RPM / DEB installation via Docker.
+1. Commandline help
+1. Logging
+1. Sub-command structure
 
 ### Invocation
 
 ```console
-go-hello-world
+go-hello-world-plus
 ```
 
 ## Development
@@ -36,7 +37,7 @@ export PROJECT_DIR=${GOPATH}/src/github.com/docktermj
 ```console
 mkdir -p ${PROJECT_DIR}
 cd ${PROJECT_DIR}
-git clone git@github.com:docktermj/go-hello-world.git
+git clone git@github.com:docktermj/go-hello-world-plus.git
 ```
 
 #### Download dependencies
@@ -50,7 +51,7 @@ go get github.com/docopt/docopt-go
 #### Local build
 
 ```console
-go install github.com/docktermj/go-hello-world
+go install github.com/docktermj/go-hello-world-plus
 ```
 
 The results will be in the `${GOPATH}/bin` directory.
@@ -58,7 +59,7 @@ The results will be in the `${GOPATH}/bin` directory.
 #### Docker build
 
 ```console
-cd ${PROJECT_DIR}/go-hello-world
+cd ${PROJECT_DIR}/go-hello-world-plus
 sudo make compile
 ```
 
@@ -75,7 +76,7 @@ openSUSE, Fedora, CentOS, Mandrake
 Example:
 
 ```console
-sudo rpm -ivh go-hello-world-M.m.P-I.x86_64.rpm
+sudo rpm -ivh go-hello-world-plus-M.m.P-I.x86_64.rpm
 ```
 
 ##### RPM Update
@@ -83,7 +84,7 @@ sudo rpm -ivh go-hello-world-M.m.P-I.x86_64.rpm
 Example: 
 
 ```console
-sudo rpm -Uvh go-hello-world-M.m.P-I.x86_64.rpm
+sudo rpm -Uvh go-hello-world-plus-M.m.P-I.x86_64.rpm
 ```
 
 #### Debian
@@ -95,7 +96,7 @@ Ubuntu
 Example:
 
 ```console
-sudo dpkg-i go-hello-world_M.m.P-I_amd64.deb
+sudo dpkg-i go-hello-world-plus_M.m.P-I_amd64.deb
 ```
 
 ### Cleanup
