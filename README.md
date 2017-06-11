@@ -60,7 +60,7 @@ The results will be in the `${GOPATH}/bin` directory.
 
 ```console
 cd ${PROJECT_DIR}/go-hello-world-plus
-sudo make compile
+sudo make build
 ```
 
 The results will be in the `.../target` directory.
@@ -69,7 +69,7 @@ The results will be in the `.../target` directory.
 
 #### RPM-based
 
-openSUSE, Fedora, CentOS, Mandrake
+Example distributions: openSUSE, Fedora, CentOS, Mandrake
 
 ##### RPM Install
 
@@ -89,7 +89,7 @@ sudo rpm -Uvh go-hello-world-plus-M.m.P-I.x86_64.rpm
 
 #### Debian
 
-Ubuntu
+Example distributions: Ubuntu
 
 ##### Debian Install / Update
 
