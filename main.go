@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-var gitVersion string = "0.0.0"
-var gitIteration string = "0"
+var buildVersion string = "0.0.0"
+var buildIteration string = "0"
 
 // TODO: Add docopt.
 // TODO: Add logging.
@@ -11,5 +11,5 @@ var gitIteration string = "0"
 // TODO: RPC plugin system - https://github.com/hashicorp/go-plugin
 
 func main() {
-    fmt.Printf("Hello, world! from Version %s-%s\n", gitVersion, gitIteration)
+    fmt.Printf("Hello, world! from Version %s-%s\n", buildVersion, buildIteration)
 }
