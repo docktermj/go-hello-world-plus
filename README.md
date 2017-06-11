@@ -96,7 +96,7 @@ Example distributions: Ubuntu
 Example:
 
 ```console
-sudo dpkg-i go-hello-world-plus_M.m.P-I_amd64.deb
+sudo dpkg -i go-hello-world-plus_M.m.P-I_amd64.deb
 ```
 
 ### Cleanup
