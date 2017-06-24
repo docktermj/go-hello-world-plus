@@ -59,8 +59,8 @@ The results will be in the `${GOPATH}/bin` directory.
 #### Docker build
 
 ```console
-cd ${PROJECT_DIR}/go-hello-world-plus
-sudo make build
+cd ${PROJECT_DIR}/go-hello-world
+make build
 ```
 
 The results will be in the `.../target` directory.
@@ -102,5 +102,5 @@ sudo dpkg -i go-hello-world-plus_M.m.P-I_amd64.deb
 ### Cleanup
 
 ```console
-sudo make clean
+make clean
 ```
