@@ -5,8 +5,8 @@ import (
 	"log"
 
 	"github.com/docktermj/go-hello-world-plus/common/runner"
-	"github.com/docktermj/go-hello-world-plus/subcommands/hellouniverse"
-	"github.com/docktermj/go-hello-world-plus/subcommands/helloworld"
+	"github.com/docktermj/go-hello-world-plus/subcommand/hellouniverse"
+	"github.com/docktermj/go-hello-world-plus/subcommand/helloworld"
 	"github.com/docopt/docopt-go"
 )
 

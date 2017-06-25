@@ -2,8 +2,8 @@ package hellouniverse
 
 import (
 	"github.com/docktermj/go-hello-world-plus/common/runner"
-	"github.com/docktermj/go-hello-world-plus/subcommands/hellouniverse/english"
-	"github.com/docktermj/go-hello-world-plus/subcommands/hellouniverse/german"
+	"github.com/docktermj/go-hello-world-plus/subcommand/hellouniverse/english"
+	"github.com/docktermj/go-hello-world-plus/subcommand/hellouniverse/german"
 )
 
 func Command(argv []string) {
