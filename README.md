@@ -43,7 +43,8 @@ git clone git@github.com:docktermj/go-hello-world-plus.git
 #### Download dependencies
 
 ```console
-go get github.com/docopt/docopt-go
+cd ${PROJECT_DIR}/go-hello-world
+make dependencies
 ```
 
 ### Build
@@ -51,7 +52,8 @@ go get github.com/docopt/docopt-go
 #### Local build
 
 ```console
-go install github.com/docktermj/go-hello-world-plus
+cd ${PROJECT_DIR}/go-hello-world
+make build-local
 ```
 
 The results will be in the `${GOPATH}/bin` directory.
@@ -64,6 +66,13 @@ make build
 ```
 
 The results will be in the `.../target` directory.
+
+### Test
+
+```console
+cd ${PROJECT_DIR}/go-hello-world
+make test-local
+```
 
 ### Install
 
